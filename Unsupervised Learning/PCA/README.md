@@ -1,7 +1,7 @@
 # Principal Component Analysis (PCA)
 
 <p align="center">
-  <img src="https://cdn.prod.website-files.com/621e95f9ac30687a56e4297e/64adcad3f1a8195f54b8fa32_V2_1681216162455_637ea10c-2578-4213-b13f-9ef1e607a4fb_HIGH_RES.png" width="600"/>
+  <img src="https://cdn.prod.website-files.com/621e95f9ac30687a56e4297e/64adcad3f1a8195f54b8fa32_V2_1681216162455_637ea10c-2578-4213-b13f-9ef1e607a4fb_HIGH_RES.png](https://cdn.prod.website-files.com/621e95f9ac30687a56e4297e/64adcad3f1a8195f54b8fa32_V2_1681216162455_637ea10c-2578-4213-b13f-9ef1e607a4fb_HIGH_RES.png" width="600"/>
 </p>
 
 ## Overview
