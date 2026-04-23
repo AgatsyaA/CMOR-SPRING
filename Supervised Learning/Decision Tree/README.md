@@ -1,6 +1,8 @@
 # Decision Trees
 
-![Decision Tree for Business Planning](https://www.cfoselections.com/hubfs/when%20to%20use%20a%20decision%20tree%20for%20business%20planning.png)
+<p align="center">
+  <img src="https://www.cfoselections.com/hubfs/when%20to%20use%20a%20decision%20tree%20for%20business%20planning.png" width="600"/>
+</p>
 
 ## Overview
 
