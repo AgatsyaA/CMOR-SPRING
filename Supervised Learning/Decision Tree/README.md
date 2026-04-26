@@ -1,185 +1,225 @@
-# Decision Trees
+# Ensemble Learning: Regression and Classification
 
-<p align="center">
-  <img src="https://www.cfoselections.com/hubfs/when%20to%20use%20a%20decision%20tree%20for%20business%20planning.png" width="600"/>
-</p>
+<div align="center">
+  <img src="https://www.ibm.com/adobe/dynamicmedia/deliver/dm-aid--fc4f06fb-b27c-424b-9180-3163e7d2825e/ensemble-learning-boosting.png" width="700"/>
+</div>
 
-# Decision Trees
+---
 
 ## Overview
 
-Decision Trees are a non-parametric supervised learning method used for both classification and regression tasks. They model decision-making processes using a hierarchical, tree-like structure, where each internal node represents a feature-based condition, each branch represents an outcome, and each leaf node represents a final prediction.
+This project demonstrates practical implementations of ensemble learning techniques for both regression and classification problems. It also establishes the theoretical foundation using decision trees, which serve as the base learners for most ensemble methods.
 
-They are widely used due to their interpretability, ability to capture non-linear relationships, and minimal preprocessing requirements.
-
----
-
-## Learning Objectives
-
-- Understand the structure and working of decision trees  
-- Learn how splitting decisions are made using impurity measures  
-- Analyze strengths and limitations of tree-based models  
-- Build intuition for model tuning and optimization  
+Ensemble learning improves accuracy, robustness, and generalization by combining multiple models, while decision trees provide the underlying structure for learning complex decision boundaries.
 
 ---
 
-## Problem Formulation
+## Decision Trees
+
+<div align="center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/CART_tree_titanic_survivors.png/800px-CART_tree_titanic_survivors.png" width="600"/>
+</div>
+
+### Overview
+
+Decision Trees are a non-parametric supervised learning method used for both classification and regression tasks. They model decision-making processes using a hierarchical tree structure.
+
+Each internal node represents a feature-based condition, each branch represents an outcome, and each leaf node represents a final prediction.
+
+---
+
+### Learning Objectives
+
+- Understand tree structure and recursive splitting  
+- Learn impurity-based decision making  
+- Analyze strengths and limitations  
+- Build intuition for model tuning  
+
+---
+
+### Problem Formulation
 
 Given input features \( X \) and target variable \( y \), the objective is to learn a function:
 
 f(X) → y  
 
-The model partitions the feature space into regions and assigns predictions based on the majority class (classification) or mean value (regression) within each region.
+The model partitions the feature space into regions and assigns predictions based on majority class (classification) or mean value (regression).
 
 ---
 
-## How Decision Trees Work
+### How Decision Trees Work
 
-Decision Trees recursively split the dataset into subsets based on feature values.
+- Select best feature and threshold  
+- Split dataset into subsets  
+- Recursively repeat splitting  
+- Continue until stopping criteria are met  
 
-At each node:
-- A feature is selected  
-- A threshold or condition is applied  
-- The dataset is divided into subsets  
-- The process continues recursively  
-
-Each path from root to leaf represents a decision rule.
+Each root-to-leaf path represents a decision rule.
 
 ---
 
-## Splitting Criteria
+### Splitting Criteria
 
-### Classification
+#### Classification
 
-**Gini Impurity**  
-Measures the probability of incorrect classification:
-
+Gini Impurity  
 Gini = 1 − Σ (pᵢ)²  
 
-**Entropy**  
-Measures randomness or disorder:
-
+Entropy  
 Entropy = − Σ pᵢ log₂(pᵢ)  
 
-The algorithm selects splits that minimize impurity.
+#### Regression
+
+Mean Squared Error (MSE)
 
 ---
 
-### Regression
+### Algorithm Workflow
 
-**Mean Squared Error (MSE)**  
-Measures variance within a node and is minimized during splitting.
-
----
-
-## Algorithm Workflow
-
-1. Start with the full dataset as the root node  
-2. Evaluate all possible splits across features  
-3. Select the split that maximizes information gain or minimizes error  
-4. Partition the dataset  
-5. Repeat recursively for each subset  
-6. Stop when:
-   - Maximum depth is reached  
-   - Minimum samples per node is reached  
-   - No further improvement is possible  
+1. Start with full dataset  
+2. Evaluate all splits  
+3. Choose best split  
+4. Partition data  
+5. Repeat recursively  
+6. Stop based on constraints  
 
 ---
 
-## Model Complexity and Overfitting
+### Model Complexity and Overfitting
 
-Decision Trees tend to overfit when allowed to grow deep. Controlling complexity is critical.
+Decision trees tend to overfit when deep.
 
-### Common Regularization Techniques
+#### Regularization Techniques
 
-- Max depth restriction  
+- Max depth  
 - Minimum samples per split  
 - Minimum samples per leaf  
-- Pruning (pre-pruning and post-pruning)  
+- Pruning  
 
 ---
 
-## Advantages
+### Advantages
 
-- Highly interpretable and easy to visualize  
-- Handles both numerical and categorical data  
-- Requires minimal feature scaling  
-- Captures non-linear relationships  
-- Fast inference time  
+- Interpretable  
+- Handles non-linearity  
+- Minimal preprocessing  
+- Works with mixed data types  
 
 ---
 
-## Limitations
+### Limitations
 
-- Prone to overfitting  
-- Sensitive to small changes in data  
-- Can become unstable with noisy data  
-- Bias toward features with more splits  
+- Overfitting  
+- Instability  
+- Sensitive to noise  
+- Biased toward dominant features  
+
+---
+
+## Ensemble Learning
+
+### Key Concepts
+
+- Bagging reduces variance  
+- Boosting reduces bias  
+- Stacking combines models using meta-learning  
+
+---
+
+## Why Ensemble Learning Builds on Trees
+
+Decision Trees are high-variance models. Ensemble methods improve them by:
+
+| Method        | Improvement Mechanism |
+|--------------|----------------------|
+| Bagging      | Reduces variance     |
+| Boosting     | Reduces bias         |
+| Stacking     | Improves prediction  |
+
+---
+
+## Project Files
+
+- `CODE Regressor.ipynb` — Ensemble models for regression  
+- `CODE Classification.ipynb` — Ensemble models for classification  
+
+---
+
+## Regression Implementation
+
+### Models Used
+
+- Linear Regression  
+- Decision Tree Regressor  
+- Random Forest Regressor  
+- Gradient Boosting Regressor  
+
+### Metrics
+
+- RMSE  
+- R² Score  
+
+---
+
+## Classification Implementation
+
+### Models Used
+
+- Logistic Regression  
+- Decision Tree Classifier  
+- Random Forest Classifier  
+- AdaBoost / Gradient Boosting  
+- Voting Classifier  
+
+### Metrics
+
+- Accuracy  
+- Precision  
+- Recall  
+- Confusion Matrix  
+
+---
+
+## Workflow
+
+1. Data loading  
+2. Preprocessing  
+3. Baseline modeling  
+4. Ensemble application  
+5. Evaluation  
 
 ---
 
 ## Improving Performance
 
-- Use pruning to simplify trees  
-- Apply cross-validation for model selection  
-- Normalize or preprocess data where required  
-- Use ensemble methods:
-  - Random Forest  
-  - Gradient Boosting  
+- Hyperparameter tuning  
+- Cross-validation  
+- Feature engineering  
+- Ensemble selection  
 
 ---
 
 ## Applications
 
-Decision Trees are widely used in:
-
 - Fraud detection  
 - Medical diagnosis  
-- Credit risk modeling  
+- Credit scoring  
 - Customer segmentation  
 - Recommendation systems  
-- Business decision analysis  
 
 ---
 
-## Implementation in This Repository
+## Technology Stack
 
-This module includes:
-
-- Decision tree implementations  
-- Experiments with different splitting criteria  
-- Analysis of model performance  
-- Exploration of overfitting vs generalization  
+- Python  
+- Scikit-learn  
+- Pandas, NumPy  
+- Matplotlib  
 
 ---
 
-## Evaluation Metrics
+## How to Run
 
-### Classification
-
-- Accuracy  
-- Precision  
-- Recall  
-- F1 Score  
-- Confusion Matrix  
-
-### Regression
-
-- Mean Squared Error (MSE)  
-- Root Mean Squared Error (RMSE)  
-- R² Score  
-
----
-
-## Key Takeaways
-
-- Decision Trees break complex problems into simple decision rules  
-- They are powerful baseline models for many tasks  
-- Model performance depends on proper regularization  
-- They form the foundation for ensemble learning techniques  
-
----
-
-## Conclusion
-
-Decision Trees provide a balance between interpretability and predictive capability. While simple in structure, they are highly effective and form the basis of advanced models such as Random Forests and Gradient Boosting, which are widely used in production systems.l-world strategic decision-making scenarios.
+```bash
+pip install numpy pandas scikit-learn matplotlib
+jupyter notebook
