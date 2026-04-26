@@ -1,6 +1,6 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Ensemble_learning.svg/1200px-Ensemble_learning.svg.png" width="700" style="display:block; margin:auto;" />
-
 # 🤖 Ensemble Learning: Regression & Classification
+
+<img src="https://www.ibm.com/adobe/dynamicmedia/deliver/dm-aid--fc4f06fb-b27c-424b-9180-3163e7d2825e/ensemble-learning-boosting.png" width="700" style="display:block; margin:auto;" />
 
 ---
 
@@ -11,14 +11,14 @@ This project demonstrates practical implementations of **Ensemble Learning techn
 - 📈 Regression Problems  
 - 🧠 Classification Problems  
 
-Ensemble learning improves **accuracy, robustness, and generalization** by combining multiple models.
+Ensemble learning improves **accuracy, robustness, and generalization** by combining multiple models. :contentReference[oaicite:1]{index=1}  
 
 ---
 
 ## 🧠 Key Concepts
 
 - **Bagging (Bootstrap Aggregation)** → Reduces variance  
-- **Boosting** → Reduces bias  
+- **Boosting** → Sequentially corrects model errors :contentReference[oaicite:2]{index=2}  
 - **Stacking** → Combines multiple models using a meta-learner  
 
 ---
