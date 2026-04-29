@@ -119,6 +119,8 @@ Unsupervised learning involves training models on **unlabeled data**, where the 
 
 ## Comparison: Supervised vs Unsupervised Learning
 
+<div align="center">
+
 | Feature | Supervised Learning | Unsupervised Learning |
 |--------|--------------------|----------------------|
 | Data Type | Labeled | Unlabeled |
@@ -126,6 +128,8 @@ Unsupervised learning involves training models on **unlabeled data**, where the 
 | Output | Known | Unknown |
 | Human Involvement | High | Low |
 | Examples | Regression, Classification | Clustering, PCA |
+
+</div>
 
 ---
 
