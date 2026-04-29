@@ -17,7 +17,7 @@ It is a foundational technique in machine learning and deep learning, enabling m
 ## How It Works
 
 - Initialize model parameters (weights)  
-- Compute the **gradient** of the loss function  
+- Compute the gradient of the loss function  
 - Update parameters in the opposite direction of the gradient  
 - Repeat until convergence (minimum loss achieved)  
 
@@ -25,15 +25,13 @@ It is a foundational technique in machine learning and deep learning, enabling m
 
 ## Update Rule
 
-\[
-\theta = \theta - \alpha \cdot \nabla J(\theta)
-\]
+θ = θ − α · ∇J(θ)
 
 Where:
 
-- \( \theta \) → Model parameters  
-- \( \alpha \) → Learning rate  
-- \( \nabla J(\theta) \) → Gradient of the loss function  
+- θ → Model parameters  
+- α → Learning rate  
+- ∇J(θ) → Gradient of the loss function  
 
 ---
 
@@ -85,5 +83,15 @@ Where:
 - Neural networks and deep learning  
 - Recommendation systems  
 - Natural language processing  
+
+---
+
+## References
+
+- https://scikit-learn.org/stable/modules/sgd.html  
+- https://developers.google.com/machine-learning/crash-course/reducing-loss/gradient-descent  
+- https://www.deeplearningbook.org/ (Deep Learning – Goodfellow, Bengio, Courville)  
+- https://link.springer.com/book/10.1007/978-0-387-84858-7 (Elements of Statistical Learning)  
+- https://www.ibm.com/topics/gradient-descent  
 
 ---
