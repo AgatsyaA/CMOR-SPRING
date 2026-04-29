@@ -1,15 +1,19 @@
 # Machine Learning: Supervised and Unsupervised Learning
 
-![Supervised vs Unsupervised](https://www.vproexpert.com/wp-content/uploads/2020/09/supervised-and-unsupervised-1024x576.jpg)
+<p align="center">
+  <img src="https://www.vproexpert.com/wp-content/uploads/2020/09/supervised-and-unsupervised-1024x576.jpg" width="700"/>
+</p>
+
+---
 
 ## Overview
 
-This repository provides a structured and practical implementation of core machine learning concepts, focusing on supervised and unsupervised learning.
+This repository provides a structured and practical implementation of **core machine learning concepts**, focusing on both **supervised** and **unsupervised learning**.
 
-It bridges theoretical understanding with hands-on implementation, covering foundational algorithms widely used in industry and research. Machine learning can broadly be categorized based on the availability of labeled data:
+It combines **theoretical foundations with hands-on implementation**, covering widely used algorithms in industry and research. Machine learning methods can broadly be categorized based on the availability of labeled data:
 
-- Supervised learning: learning from labeled data  
-- Unsupervised learning: discovering patterns from unlabeled data  
+- **Supervised Learning** → Learning from labeled data  
+- **Unsupervised Learning** → Discovering patterns from unlabeled data  
 
 ---
 
@@ -17,24 +21,30 @@ It bridges theoretical understanding with hands-on implementation, covering foun
 
 ### Definition
 
-Supervised learning is a machine learning approach where models are trained on labeled datasets. Each input is associated with a known output, allowing the model to learn a mapping function and generalize to unseen data.
+Supervised learning is a machine learning paradigm where models are trained on **labeled datasets**, meaning each input is associated with a known output. The goal is to learn a mapping function that generalizes to unseen data.
+
+---
 
 ### Key Characteristics
 
 - Uses labeled data  
 - Learns input-to-output relationships  
 - Focused on prediction tasks  
-- Requires labeled datasets  
+- Requires annotated datasets  
+
+---
 
 ### Types of Problems
 
 **Classification**
 - Predicts discrete outputs  
-- Examples: spam detection, sentiment classification  
+- Examples: spam detection, sentiment analysis  
 
 **Regression**
 - Predicts continuous values  
 - Examples: house price prediction, demand forecasting  
+
+---
 
 ### Algorithms in this Repository
 
@@ -48,13 +58,15 @@ Supervised learning is a machine learning approach where models are trained on l
 - Neural Networks  
 - Perceptron  
 
+---
+
 ### Applications
 
 - Fraud detection  
 - Medical diagnosis  
 - Recommendation systems  
 - Demand forecasting  
-- Image and speech recognition  
+- Computer vision and speech recognition  
 
 ---
 
@@ -62,14 +74,18 @@ Supervised learning is a machine learning approach where models are trained on l
 
 ### Definition
 
-Unsupervised learning involves training models on unlabeled data, where the objective is to identify hidden patterns, structures, or relationships without predefined outputs.
+Unsupervised learning involves training models on **unlabeled data**, where the objective is to uncover hidden patterns, structures, or relationships without predefined outputs.
+
+---
 
 ### Key Characteristics
 
 - Uses unlabeled data  
 - Focuses on pattern discovery  
 - No predefined outputs  
-- Limited human intervention  
+- Minimal human supervision  
+
+---
 
 ### Types of Problems
 
@@ -78,14 +94,18 @@ Unsupervised learning involves training models on unlabeled data, where the obje
 - Example: customer segmentation  
 
 **Dimensionality Reduction**
-- Reduces the number of features while preserving information  
+- Reduces features while preserving structure  
 - Example: Principal Component Analysis (PCA)  
+
+---
 
 ### Algorithms in this Repository
 
 - DBSCAN  
 - K-Means  
 - PCA  
+
+---
 
 ### Applications
 
@@ -109,25 +129,22 @@ Unsupervised learning involves training models on unlabeled data, where the obje
 
 ---
 
-## Tech Stack
-
-- Language: Python  
-- Libraries: NumPy, Pandas, Scikit-learn, Matplotlib  
-- Tools: Jupyter Notebook, GitHub  
-
----
-
-## Usage
-
-1. Navigate to the project directory  
-2. Open notebooks using Jupyter  
-3. Execute cells to explore implementations and results  
-
----
-
 ## Learning Outcomes
 
-- Understand the differences between supervised and unsupervised learning  
+- Understand supervised vs unsupervised learning paradigms  
 - Implement core machine learning algorithms  
-- Apply machine learning techniques to real-world problems  
-- Build a foundation for advanced topics in machine learning and artificial intelligence  
+- Apply ML techniques to real-world problems  
+- Build a strong foundation for advanced AI systems  
+
+---
+
+## References
+
+- https://scikit-learn.org/stable/supervised_learning.html  
+- https://scikit-learn.org/stable/unsupervised_learning.html  
+- https://developers.google.com/machine-learning/crash-course  
+- https://www.statlearning.com/  
+- https://link.springer.com/book/10.1007/978-0-387-84858-7  
+- https://www.ibm.com/topics/machine-learning  
+
+---
