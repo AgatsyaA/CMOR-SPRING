@@ -25,7 +25,9 @@ It is a foundational technique in machine learning and deep learning, enabling m
 
 ## Update Rule
 
-θ = θ − α · ∇J(θ)
+<p align="center">
+  <strong>θ = θ − α · ∇J(θ)</strong>
+</p>
 
 Where:
 
