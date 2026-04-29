@@ -133,12 +133,6 @@ Optimal k is typically selected using cross-validation.
 
 ---
 
-## Conclusion
-
-KNN is a simple yet powerful algorithm based on **distance-driven similarity**. Its effectiveness depends heavily on **feature scaling**, **distance metric**, and **choice of k**.
-
----
-
 ## References
 
 - https://scikit-learn.org/stable/modules/neighbors.html  
