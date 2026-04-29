@@ -46,30 +46,28 @@ A data point is assigned the class that is most common among its closest neighbo
 
 ## Distance Metrics
 
-**Euclidean Distance**  
-d(x, y) = sqrt(Σ (x_i - y_i)^2)
+### Euclidean Distance  
+d(x, y) = √Σ (xᵢ − yᵢ)²  
 
-**Manhattan Distance**  
-d(x, y) = Σ |x_i - y_i|
+### Manhattan Distance  
+d(x, y) = Σ |xᵢ − yᵢ|  
 
-**Minkowski Distance**  
-d(x, y) = (Σ |x_i - y_i|^p)^(1/p)
+### Minkowski Distance  
+d(x, y) = (Σ |xᵢ − yᵢ|ᵖ)^(1/p)  
 
 ---
 
 ## Prediction Formulas
 
-**Classification (Majority Voting)**  
-ŷ = mode(y1, y2, ..., yk)
+### Classification (Majority Voting)  
+ŷ = mode(y₁, y₂, …, yₖ)  
 
-**Regression (Averaging)**  
-ŷ = (1/k) Σ y_i
+### Regression (Averaging)  
+ŷ = (1/k) Σ yᵢ  
 
-**Weighted KNN (Optional)**  
-ŷ = (Σ w_i * y_i) / (Σ w_i)  
-where w_i = 1 / d(x, x_i)
-
----
+### Weighted KNN (Optional)  
+ŷ = (Σ wᵢ · yᵢ) / (Σ wᵢ)  
+where wᵢ = 1 / d(x, xᵢ)  
 
 ## Methodology
 
