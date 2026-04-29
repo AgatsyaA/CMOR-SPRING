@@ -29,7 +29,9 @@ This module focuses on building a strong understanding of unsupervised technique
 
 Given a dataset X without labels:
 
-X = {x₁, x₂, ..., xₙ}
+<p align="center">
+  <strong>X = {x₁, x₂, ..., xₙ}</strong>
+</p>
 
 The objective is to discover hidden structure such as:
 - Groups (clusters)  
