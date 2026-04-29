@@ -4,9 +4,11 @@
   <img src="https://media.geeksforgeeks.org/wp-content/uploads/20251210102132756957/unsupervised_learning.webp" width="600"/>
 </p>
 
+---
+
 ## Overview
 
-Unsupervised learning is a machine learning paradigm where models are trained on unlabeled data and must discover patterns, structures, or relationships without explicit guidance.
+Unsupervised learning is a machine learning paradigm where models are trained on **unlabeled data** and must discover patterns, structures, or relationships without explicit guidance.
 
 Unlike supervised learning, there are no predefined outputs. The model independently identifies meaningful groupings, representations, or anomalies within the data.
 
@@ -71,6 +73,43 @@ Identifying rare or unusual data points.
 
 ---
 
+## Formulas
+
+### K-Means Objective Function
+
+J = Σ Σ ||xᵢ − μⱼ||²  
+
+Minimizes the distance between points and their assigned cluster centers.
+
+---
+
+### Euclidean Distance
+
+d(x, y) = √Σ (xᵢ − yᵢ)²  
+
+---
+
+### Silhouette Score
+
+S = (b − a) / max(a, b)  
+
+Where:  
+- a → Mean intra-cluster distance  
+- b → Mean nearest-cluster distance  
+
+---
+
+### PCA Transformation
+
+Z = XW  
+
+Where:  
+- X → Data matrix  
+- W → Eigenvectors (principal components)  
+- Z → Transformed data  
+
+---
+
 ## Repository Structure
 
 Unsupervised Learning/
@@ -118,6 +157,12 @@ Unsupervised Learning/
 
 ---
 
-## Conclusion
+## References
 
-Unsupervised learning focuses on discovering structure within data. It plays a key role in exploratory analysis and complements supervised learning in real-world machine learning systems.
+- https://scikit-learn.org/stable/unsupervised_learning.html  
+- https://developers.google.com/machine-learning/clustering  
+- https://www.statlearning.com/  
+- https://link.springer.com/book/10.1007/978-0-387-84858-7  
+- https://www.ibm.com/topics/unsupervised-learning  
+
+---
